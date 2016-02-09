@@ -166,8 +166,6 @@
 				29E0E1FE1C694FA5009BC57F /* viewdelegates */,
 				29E0E1FD1C694F9D009BC57F /* presenter */,
 				29E0E1FC1C694F61009BC57F /* view */,
-				29E0E1CC1C658962009BC57F /* ViewController.h */,
-				29E0E1CD1C658962009BC57F /* ViewController.m */,
 			);
 			name = presentation;
 			sourceTree = "<group>";
@@ -190,6 +188,8 @@
 		29E0E1FC1C694F61009BC57F /* view */ = {
 			isa = PBXGroup;
 			children = (
+				29E0E1CC1C658962009BC57F /* ViewController.h */,
+				29E0E1CD1C658962009BC57F /* ViewController.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
