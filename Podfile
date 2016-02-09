@@ -5,6 +5,10 @@ platform :ios, '8.0'
 
 target 'iOS-CleanArchitecture' do
     pod 'SDWebImage'
+    pod 'ReactiveCocoa', '2.4.6'
+    pod 'Typhoon'
+    pod 'AFNetworking'
+    pod 'Mantle'
 end
 
 target 'iOS-CleanArchitectureTests' do

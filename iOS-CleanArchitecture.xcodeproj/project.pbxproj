@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29B62A541C6A7F6100298539 /* ApplicationAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B62A531C6A7F6100298539 /* ApplicationAssembly.m */; };
 		29E0E1C81C658962009BC57F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E0E1C71C658962009BC57F /* main.m */; };
 		29E0E1CB1C658962009BC57F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E0E1CA1C658962009BC57F /* AppDelegate.m */; };
 		29E0E1CE1C658962009BC57F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E0E1CD1C658962009BC57F /* ViewController.m */; };
@@ -15,6 +16,8 @@
 		29E0E1D61C658962009BC57F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29E0E1D41C658962009BC57F /* LaunchScreen.storyboard */; };
 		29E0E1E11C658962009BC57F /* iOS_CleanArchitectureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E0E1E01C658962009BC57F /* iOS_CleanArchitectureTests.m */; };
 		29E0E1EC1C658962009BC57F /* iOS_CleanArchitectureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E0E1EB1C658962009BC57F /* iOS_CleanArchitectureUITests.m */; };
+		29E0E2091C69529F009BC57F /* UseCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E0E2081C69529E009BC57F /* UseCase.m */; };
+		29E0E20C1C6952B4009BC57F /* GetUserListUseCaseImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E0E20B1C6952B4009BC57F /* GetUserListUseCaseImpl.m */; };
 		F5EBE0ACC4968F7DCCCDD7D0 /* libPods-iOS-CleanArchitecture.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8819D364B268E71162FB46E /* libPods-iOS-CleanArchitecture.a */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29B62A521C6A7F6100298539 /* ApplicationAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationAssembly.h; sourceTree = "<group>"; };
+		29B62A531C6A7F6100298539 /* ApplicationAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationAssembly.m; sourceTree = "<group>"; };
 		29E0E1C31C658962009BC57F /* iOS-CleanArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-CleanArchitecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E0E1C71C658962009BC57F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29E0E1C91C658962009BC57F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,6 +57,12 @@
 		29E0E1E71C658962009BC57F /* iOS-CleanArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-CleanArchitectureUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E0E1EB1C658962009BC57F /* iOS_CleanArchitectureUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_CleanArchitectureUITests.m; sourceTree = "<group>"; };
 		29E0E1ED1C658962009BC57F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29E0E2021C69510D009BC57F /* BaseUseCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseUseCase.h; sourceTree = "<group>"; };
+		29E0E2031C695159009BC57F /* GetUserList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetUserList.h; sourceTree = "<group>"; };
+		29E0E2071C69529E009BC57F /* UseCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UseCase.h; sourceTree = "<group>"; };
+		29E0E2081C69529E009BC57F /* UseCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UseCase.m; sourceTree = "<group>"; };
+		29E0E20A1C6952B4009BC57F /* GetUserListUseCaseImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetUserListUseCaseImpl.h; sourceTree = "<group>"; };
+		29E0E20B1C6952B4009BC57F /* GetUserListUseCaseImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetUserListUseCaseImpl.m; sourceTree = "<group>"; };
 		2AA26DDF52C5A1FDDACF85B9 /* Pods-iOS-CleanArchitecture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-CleanArchitecture.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-CleanArchitecture/Pods-iOS-CleanArchitecture.debug.xcconfig"; sourceTree = "<group>"; };
 		C9521ECB4F71ECA129631163 /* Pods-iOS-CleanArchitecture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-CleanArchitecture.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-CleanArchitecture/Pods-iOS-CleanArchitecture.release.xcconfig"; sourceTree = "<group>"; };
 		F8819D364B268E71162FB46E /* libPods-iOS-CleanArchitecture.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS-CleanArchitecture.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,10 +119,11 @@
 		29E0E1C51C658962009BC57F /* iOS-CleanArchitecture */ = {
 			isa = PBXGroup;
 			children = (
+				29E0E1FB1C694EAA009BC57F /* data */,
+				29E0E1FA1C694EA2009BC57F /* domain */,
+				29E0E1F91C694E97009BC57F /* presentation */,
 				29E0E1C91C658962009BC57F /* AppDelegate.h */,
 				29E0E1CA1C658962009BC57F /* AppDelegate.m */,
-				29E0E1CC1C658962009BC57F /* ViewController.h */,
-				29E0E1CD1C658962009BC57F /* ViewController.m */,
 				29E0E1CF1C658962009BC57F /* Main.storyboard */,
 				29E0E1D21C658962009BC57F /* Assets.xcassets */,
 				29E0E1D41C658962009BC57F /* LaunchScreen.storyboard */,
@@ -145,6 +157,77 @@
 				29E0E1ED1C658962009BC57F /* Info.plist */,
 			);
 			path = "iOS-CleanArchitectureUITests";
+			sourceTree = "<group>";
+		};
+		29E0E1F91C694E97009BC57F /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				29E0E1FF1C694FB3009BC57F /* di */,
+				29E0E1FE1C694FA5009BC57F /* viewdelegates */,
+				29E0E1FD1C694F9D009BC57F /* presenter */,
+				29E0E1FC1C694F61009BC57F /* view */,
+				29E0E1CC1C658962009BC57F /* ViewController.h */,
+				29E0E1CD1C658962009BC57F /* ViewController.m */,
+			);
+			name = presentation;
+			sourceTree = "<group>";
+		};
+		29E0E1FA1C694EA2009BC57F /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				29E0E2011C6950B6009BC57F /* interactor */,
+			);
+			name = domain;
+			sourceTree = "<group>";
+		};
+		29E0E1FB1C694EAA009BC57F /* data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
+		29E0E1FC1C694F61009BC57F /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		29E0E1FD1C694F9D009BC57F /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = presenter;
+			sourceTree = "<group>";
+		};
+		29E0E1FE1C694FA5009BC57F /* viewdelegates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = viewdelegates;
+			sourceTree = "<group>";
+		};
+		29E0E1FF1C694FB3009BC57F /* di */ = {
+			isa = PBXGroup;
+			children = (
+				29B62A521C6A7F6100298539 /* ApplicationAssembly.h */,
+				29B62A531C6A7F6100298539 /* ApplicationAssembly.m */,
+			);
+			name = di;
+			sourceTree = "<group>";
+		};
+		29E0E2011C6950B6009BC57F /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				29E0E2021C69510D009BC57F /* BaseUseCase.h */,
+				29E0E2031C695159009BC57F /* GetUserList.h */,
+				29E0E2071C69529E009BC57F /* UseCase.h */,
+				29E0E2081C69529E009BC57F /* UseCase.m */,
+				29E0E20A1C6952B4009BC57F /* GetUserListUseCaseImpl.h */,
+				29E0E20B1C6952B4009BC57F /* GetUserListUseCaseImpl.m */,
+			);
+			name = interactor;
 			sourceTree = "<group>";
 		};
 		876D841AFC7EA35666AE8C1B /* Pods */ = {
@@ -346,6 +429,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				29E0E1CE1C658962009BC57F /* ViewController.m in Sources */,
+				29E0E20C1C6952B4009BC57F /* GetUserListUseCaseImpl.m in Sources */,
+				29B62A541C6A7F6100298539 /* ApplicationAssembly.m in Sources */,
+				29E0E2091C69529F009BC57F /* UseCase.m in Sources */,
 				29E0E1CB1C658962009BC57F /* AppDelegate.m in Sources */,
 				29E0E1C81C658962009BC57F /* main.m in Sources */,
 			);

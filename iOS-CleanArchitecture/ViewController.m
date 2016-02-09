@@ -16,12 +16,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.getUserListUseCase execute:self];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)sendNext:(id)value {
+    NSLog(@"here");
+}
+
+-(void)sendError:(NSError *)error {
+    
+}
+
+-(void)sendCompleted {
+    
+}
+
+-(void)didSubscribeWithDisposable:(RACDisposable *)disposable {
+    
 }
 
 @end

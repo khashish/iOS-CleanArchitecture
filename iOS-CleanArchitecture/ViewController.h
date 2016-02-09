@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "GetUserListUseCaseImpl.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<RACSubscriber>
 
+@property (nonatomic, strong) GetUserListUseCaseImpl * getUserListUseCase;
 
 @end
 
