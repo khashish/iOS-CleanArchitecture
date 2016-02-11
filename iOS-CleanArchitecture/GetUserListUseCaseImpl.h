@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "UseCase.h"
 #import "GetUserList.h"
+#import "User.h"
+#import <JSONModel/JSONModel.h>
 
 @interface GetUserListUseCaseImpl : UseCase<GetUserList>
 

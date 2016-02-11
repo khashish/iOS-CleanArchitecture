@@ -9,10 +9,10 @@
 
 #import <Foundation/Foundation.h>
 #import "TyphoonAssembly.h"
-#import "ViewController.h"
+#import "UserListViewController.h"
 
 @interface ApplicationAssembly : TyphoonAssembly
 
-- (ViewController*)viewController;
+- (UserListViewController*)viewController;
 
 @end

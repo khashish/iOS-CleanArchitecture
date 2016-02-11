@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import "GetUserListUseCaseImpl.h"
+#import "UserListView.h"
+#import "UserListPresenter.h"
 
-@interface ViewController : UIViewController<RACSubscriber>
+@interface UserListViewController : UIViewController<UserListView>
 
-@property (nonatomic, strong) GetUserListUseCaseImpl * getUserListUseCase;
+@property(nonatomic, strong) UserListPresenter *userListPresenter;
 
 @end
 

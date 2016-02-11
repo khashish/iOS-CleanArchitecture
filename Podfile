@@ -9,6 +9,7 @@ target 'iOS-CleanArchitecture' do
     pod 'Typhoon'
     pod 'AFNetworking'
     pod 'Mantle'
+    pod 'JSONModel'
 end
 
 target 'iOS-CleanArchitectureTests' do

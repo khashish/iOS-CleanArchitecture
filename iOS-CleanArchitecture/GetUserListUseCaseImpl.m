@@ -7,7 +7,6 @@
 //
 
 #import "GetUserListUseCaseImpl.h"
-#import <AFNetworking/AFNetworking.h>
 
 @implementation GetUserListUseCaseImpl
 
@@ -18,9 +17,10 @@
 -(RACSignal *)buildUseCaseSignal {
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         
-        NSData * data = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://www.android10.org/myapi/users.json"]];
-//        NSDictionary *dataDict = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-        [subscriber sendNext:nil];
+        NSData * data = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://jsonplaceholder.typicode.com/users"]];
+        
+        NSArray<User*> *users = [User arrayOfModelsFromData:data error:nil];
+        [subscriber sendNext:users];
         [subscriber sendCompleted];
         return [RACDisposable disposableWithBlock:^{
 

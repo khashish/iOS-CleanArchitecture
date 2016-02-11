@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		29B62A541C6A7F6100298539 /* ApplicationAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B62A531C6A7F6100298539 /* ApplicationAssembly.m */; };
+		29B62A591C6AB54500298539 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B62A581C6AB54500298539 /* BaseViewController.m */; };
+		29B62A5D1C6AB9AA00298539 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B62A5C1C6AB9AA00298539 /* User.m */; };
+		29B62A611C6ABE3800298539 /* UserListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B62A601C6ABE3800298539 /* UserListPresenter.m */; };
 		29E0E1C81C658962009BC57F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E0E1C71C658962009BC57F /* main.m */; };
 		29E0E1CB1C658962009BC57F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E0E1CA1C658962009BC57F /* AppDelegate.m */; };
-		29E0E1CE1C658962009BC57F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E0E1CD1C658962009BC57F /* ViewController.m */; };
+		29E0E1CE1C658962009BC57F /* UserListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E0E1CD1C658962009BC57F /* UserListViewController.m */; };
 		29E0E1D11C658962009BC57F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29E0E1CF1C658962009BC57F /* Main.storyboard */; };
 		29E0E1D31C658962009BC57F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E0E1D21C658962009BC57F /* Assets.xcassets */; };
 		29E0E1D61C658962009BC57F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29E0E1D41C658962009BC57F /* LaunchScreen.storyboard */; };
@@ -41,12 +44,21 @@
 /* Begin PBXFileReference section */
 		29B62A521C6A7F6100298539 /* ApplicationAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationAssembly.h; sourceTree = "<group>"; };
 		29B62A531C6A7F6100298539 /* ApplicationAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationAssembly.m; sourceTree = "<group>"; };
+		29B62A551C6AB01200298539 /* LoadDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadDataView.h; sourceTree = "<group>"; };
+		29B62A561C6AB16900298539 /* UserListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserListView.h; sourceTree = "<group>"; };
+		29B62A571C6AB54500298539 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		29B62A581C6AB54500298539 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		29B62A5B1C6AB9AA00298539 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		29B62A5C1C6AB9AA00298539 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		29B62A5E1C6ABDF500298539 /* Presenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Presenter.h; sourceTree = "<group>"; };
+		29B62A5F1C6ABE3800298539 /* UserListPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserListPresenter.h; sourceTree = "<group>"; };
+		29B62A601C6ABE3800298539 /* UserListPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserListPresenter.m; sourceTree = "<group>"; };
 		29E0E1C31C658962009BC57F /* iOS-CleanArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-CleanArchitecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E0E1C71C658962009BC57F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29E0E1C91C658962009BC57F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		29E0E1CA1C658962009BC57F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		29E0E1CC1C658962009BC57F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		29E0E1CD1C658962009BC57F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		29E0E1CC1C658962009BC57F /* UserListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserListViewController.h; sourceTree = "<group>"; };
+		29E0E1CD1C658962009BC57F /* UserListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserListViewController.m; sourceTree = "<group>"; };
 		29E0E1D01C658962009BC57F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29E0E1D21C658962009BC57F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29E0E1D51C658962009BC57F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -94,6 +106,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29B62A5A1C6AB99C00298539 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				29B62A5B1C6AB9AA00298539 /* User.h */,
+				29B62A5C1C6AB9AA00298539 /* User.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
 		29E0E1BA1C658962009BC57F = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +194,7 @@
 		29E0E1FA1C694EA2009BC57F /* domain */ = {
 			isa = PBXGroup;
 			children = (
+				29B62A5A1C6AB99C00298539 /* model */,
 				29E0E2011C6950B6009BC57F /* interactor */,
 			);
 			name = domain;
@@ -188,8 +210,12 @@
 		29E0E1FC1C694F61009BC57F /* view */ = {
 			isa = PBXGroup;
 			children = (
-				29E0E1CC1C658962009BC57F /* ViewController.h */,
-				29E0E1CD1C658962009BC57F /* ViewController.m */,
+				29E0E1CC1C658962009BC57F /* UserListViewController.h */,
+				29E0E1CD1C658962009BC57F /* UserListViewController.m */,
+				29B62A551C6AB01200298539 /* LoadDataView.h */,
+				29B62A561C6AB16900298539 /* UserListView.h */,
+				29B62A571C6AB54500298539 /* BaseViewController.h */,
+				29B62A581C6AB54500298539 /* BaseViewController.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -197,6 +223,9 @@
 		29E0E1FD1C694F9D009BC57F /* presenter */ = {
 			isa = PBXGroup;
 			children = (
+				29B62A5E1C6ABDF500298539 /* Presenter.h */,
+				29B62A5F1C6ABE3800298539 /* UserListPresenter.h */,
+				29B62A601C6ABE3800298539 /* UserListPresenter.m */,
 			);
 			name = presenter;
 			sourceTree = "<group>";
@@ -428,12 +457,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29E0E1CE1C658962009BC57F /* ViewController.m in Sources */,
+				29B62A5D1C6AB9AA00298539 /* User.m in Sources */,
+				29E0E1CE1C658962009BC57F /* UserListViewController.m in Sources */,
 				29E0E20C1C6952B4009BC57F /* GetUserListUseCaseImpl.m in Sources */,
 				29B62A541C6A7F6100298539 /* ApplicationAssembly.m in Sources */,
 				29E0E2091C69529F009BC57F /* UseCase.m in Sources */,
 				29E0E1CB1C658962009BC57F /* AppDelegate.m in Sources */,
+				29B62A591C6AB54500298539 /* BaseViewController.m in Sources */,
 				29E0E1C81C658962009BC57F /* main.m in Sources */,
+				29B62A611C6ABE3800298539 /* UserListPresenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
