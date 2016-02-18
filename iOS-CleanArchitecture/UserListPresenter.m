@@ -28,7 +28,23 @@
 
 -(void)initialize
 {
-    [self.getUserListUseCase execute:self];
+    [self.getUserListUseCase execute:[[UserListSubscriber alloc] initWithPresenter:self]];
+}
+
+@end
+
+
+@implementation UserListSubscriber
+
+
+-(instancetype)initWithPresenter:(UserListPresenter*)presenter {
+    self = [super init];
+    if (self)
+    {
+        self.userListPresenter = presenter;
+    }
+    
+    return self;
 }
 
 -(void)sendCompleted
@@ -39,6 +55,7 @@
 -(void)sendNext:(id)value
 {
     NSLog(@"value %@ ", [[value objectAtIndex:0] name]);
+//    [self.userListPresenter.getUserListUseCase execute:[[UserListSubscriber alloc] init]];
 }
 
 -(void)sendError:(NSError *)error
@@ -50,6 +67,5 @@
 {
     
 }
-
 
 @end

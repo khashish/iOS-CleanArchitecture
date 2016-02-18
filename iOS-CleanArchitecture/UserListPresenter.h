@@ -10,10 +10,18 @@
 #import "Presenter.h"
 #import "GetUserList.h"
 
-@interface UserListPresenter : NSObject<Presenter, RACSubscriber>
+@interface UserListPresenter : NSObject<Presenter>
 
 @property(nonatomic, strong) id<GetUserList> getUserListUseCase;
 
 -(void)initialize;
+
+@end
+
+@interface UserListSubscriber : NSObject<RACSubscriber>
+
+@property(nonatomic, weak) UserListPresenter *userListPresenter;
+
+-(instancetype)initWithPresenter:(UserListPresenter*)presenter;
 
 @end

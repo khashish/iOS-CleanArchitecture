@@ -10,9 +10,14 @@
 #import <Foundation/Foundation.h>
 #import "TyphoonAssembly.h"
 #import "UserListViewController.h"
+#import "UserDataRepository.h"
+#import "RestApi.h"
+#import "RestApiImpl.h"
 
 @interface ApplicationAssembly : TyphoonAssembly
 
 - (UserListViewController*)viewController;
+-(id<RestApi>)restApi;
+-(APIConnection*)apiConnection;
 
 @end

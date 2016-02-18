@@ -11,7 +11,10 @@
 #import "GetUserList.h"
 #import "User.h"
 #import <JSONModel/JSONModel.h>
+#import "UserRepository.h"
 
 @interface GetUserListUseCaseImpl : UseCase<GetUserList>
+
+@property (nonatomic, strong) id<UserRepository> userRepository;
 
 @end

@@ -15,17 +15,32 @@
 }
 
 -(RACSignal *)buildUseCaseSignal {
-    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+    return [self.userRepository getUsers];
+    
+//    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+//        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+//        AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
+//        
+//        NSURL *URL = [NSURL URLWithString:@"http://jsonplaceholder.typicode.com/users"];
+//        NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:URL cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:20000];
+////        [request ]
+//        NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
+//            if (error) {
+//                NSLog(@"Error: %@", error);
+//            } else {
+//                NSArray<User*> *users = [User arrayOfModelsFromDictionaries:responseObject error:nil];
+//                [subscriber sendNext:users];
+//                [subscriber sendCompleted];
+//            }
+//        }];
+//        
+//        [dataTask resume];
         
-        NSData * data = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://jsonplaceholder.typicode.com/users"]];
         
-        NSArray<User*> *users = [User arrayOfModelsFromData:data error:nil];
-        [subscriber sendNext:users];
-        [subscriber sendCompleted];
-        return [RACDisposable disposableWithBlock:^{
-
-        }];
-    }];
+//        return [RACDisposable disposableWithBlock:^{
+//            
+//        }];
+//    }];
 }
 
 @end

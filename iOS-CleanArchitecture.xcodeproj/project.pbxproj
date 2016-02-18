@@ -11,6 +11,7 @@
 		29B62A591C6AB54500298539 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B62A581C6AB54500298539 /* BaseViewController.m */; };
 		29B62A5D1C6AB9AA00298539 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B62A5C1C6AB9AA00298539 /* User.m */; };
 		29B62A611C6ABE3800298539 /* UserListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B62A601C6ABE3800298539 /* UserListPresenter.m */; };
+		29B62A661C6E9B1F00298539 /* APIConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B62A651C6E9B1F00298539 /* APIConnection.m */; };
 		29E0E1C81C658962009BC57F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E0E1C71C658962009BC57F /* main.m */; };
 		29E0E1CB1C658962009BC57F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E0E1CA1C658962009BC57F /* AppDelegate.m */; };
 		29E0E1CE1C658962009BC57F /* UserListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E0E1CD1C658962009BC57F /* UserListViewController.m */; };
@@ -21,6 +22,10 @@
 		29E0E1EC1C658962009BC57F /* iOS_CleanArchitectureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E0E1EB1C658962009BC57F /* iOS_CleanArchitectureUITests.m */; };
 		29E0E2091C69529F009BC57F /* UseCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E0E2081C69529E009BC57F /* UseCase.m */; };
 		29E0E20C1C6952B4009BC57F /* GetUserListUseCaseImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E0E20B1C6952B4009BC57F /* GetUserListUseCaseImpl.m */; };
+		29EFCB261C75D2BC005F440E /* CloudUserDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EFCB251C75D2BC005F440E /* CloudUserDataStore.m */; };
+		29EFCB291C75D2D0005F440E /* UserDataStoreFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EFCB281C75D2D0005F440E /* UserDataStoreFactory.m */; };
+		29EFCB2E1C75D471005F440E /* UserDataRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EFCB2D1C75D471005F440E /* UserDataRepository.m */; };
+		29EFCB311C75D89F005F440E /* RestApiImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EFCB301C75D89F005F440E /* RestApiImpl.m */; };
 		F5EBE0ACC4968F7DCCCDD7D0 /* libPods-iOS-CleanArchitecture.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8819D364B268E71162FB46E /* libPods-iOS-CleanArchitecture.a */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +58,8 @@
 		29B62A5E1C6ABDF500298539 /* Presenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Presenter.h; sourceTree = "<group>"; };
 		29B62A5F1C6ABE3800298539 /* UserListPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserListPresenter.h; sourceTree = "<group>"; };
 		29B62A601C6ABE3800298539 /* UserListPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserListPresenter.m; sourceTree = "<group>"; };
+		29B62A641C6E9B1F00298539 /* APIConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIConnection.h; sourceTree = "<group>"; };
+		29B62A651C6E9B1F00298539 /* APIConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIConnection.m; sourceTree = "<group>"; };
 		29E0E1C31C658962009BC57F /* iOS-CleanArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-CleanArchitecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E0E1C71C658962009BC57F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29E0E1C91C658962009BC57F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -75,6 +82,17 @@
 		29E0E2081C69529E009BC57F /* UseCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UseCase.m; sourceTree = "<group>"; };
 		29E0E20A1C6952B4009BC57F /* GetUserListUseCaseImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetUserListUseCaseImpl.h; sourceTree = "<group>"; };
 		29E0E20B1C6952B4009BC57F /* GetUserListUseCaseImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetUserListUseCaseImpl.m; sourceTree = "<group>"; };
+		29EFCB231C75D2A8005F440E /* UserDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDataStore.h; sourceTree = "<group>"; };
+		29EFCB241C75D2BC005F440E /* CloudUserDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudUserDataStore.h; sourceTree = "<group>"; };
+		29EFCB251C75D2BC005F440E /* CloudUserDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudUserDataStore.m; sourceTree = "<group>"; };
+		29EFCB271C75D2D0005F440E /* UserDataStoreFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDataStoreFactory.h; sourceTree = "<group>"; };
+		29EFCB281C75D2D0005F440E /* UserDataStoreFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDataStoreFactory.m; sourceTree = "<group>"; };
+		29EFCB2B1C75D345005F440E /* UserRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserRepository.h; sourceTree = "<group>"; };
+		29EFCB2C1C75D471005F440E /* UserDataRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDataRepository.h; sourceTree = "<group>"; };
+		29EFCB2D1C75D471005F440E /* UserDataRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDataRepository.m; sourceTree = "<group>"; };
+		29EFCB2F1C75D89F005F440E /* RestApiImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestApiImpl.h; sourceTree = "<group>"; };
+		29EFCB301C75D89F005F440E /* RestApiImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestApiImpl.m; sourceTree = "<group>"; };
+		29EFCB321C75D8AF005F440E /* RestApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestApi.h; sourceTree = "<group>"; };
 		2AA26DDF52C5A1FDDACF85B9 /* Pods-iOS-CleanArchitecture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-CleanArchitecture.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-CleanArchitecture/Pods-iOS-CleanArchitecture.debug.xcconfig"; sourceTree = "<group>"; };
 		C9521ECB4F71ECA129631163 /* Pods-iOS-CleanArchitecture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-CleanArchitecture.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-CleanArchitecture/Pods-iOS-CleanArchitecture.release.xcconfig"; sourceTree = "<group>"; };
 		F8819D364B268E71162FB46E /* libPods-iOS-CleanArchitecture.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS-CleanArchitecture.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +131,18 @@
 				29B62A5C1C6AB9AA00298539 /* User.m */,
 			);
 			name = model;
+			sourceTree = "<group>";
+		};
+		29B62A671C6E9B2800298539 /* net */ = {
+			isa = PBXGroup;
+			children = (
+				29B62A641C6E9B1F00298539 /* APIConnection.h */,
+				29B62A651C6E9B1F00298539 /* APIConnection.m */,
+				29EFCB2F1C75D89F005F440E /* RestApiImpl.h */,
+				29EFCB301C75D89F005F440E /* RestApiImpl.m */,
+				29EFCB321C75D8AF005F440E /* RestApi.h */,
+			);
+			name = net;
 			sourceTree = "<group>";
 		};
 		29E0E1BA1C658962009BC57F = {
@@ -194,6 +224,7 @@
 		29E0E1FA1C694EA2009BC57F /* domain */ = {
 			isa = PBXGroup;
 			children = (
+				29EFCB2A1C75D31D005F440E /* repository */,
 				29B62A5A1C6AB99C00298539 /* model */,
 				29E0E2011C6950B6009BC57F /* interactor */,
 			);
@@ -203,6 +234,9 @@
 		29E0E1FB1C694EAA009BC57F /* data */ = {
 			isa = PBXGroup;
 			children = (
+				29EFCB221C75D22D005F440E /* repository */,
+				29EFCB211C75D21C005F440E /* datastore */,
+				29B62A671C6E9B2800298539 /* net */,
 			);
 			name = data;
 			sourceTree = "<group>";
@@ -257,6 +291,35 @@
 				29E0E20B1C6952B4009BC57F /* GetUserListUseCaseImpl.m */,
 			);
 			name = interactor;
+			sourceTree = "<group>";
+		};
+		29EFCB211C75D21C005F440E /* datastore */ = {
+			isa = PBXGroup;
+			children = (
+				29EFCB231C75D2A8005F440E /* UserDataStore.h */,
+				29EFCB241C75D2BC005F440E /* CloudUserDataStore.h */,
+				29EFCB251C75D2BC005F440E /* CloudUserDataStore.m */,
+				29EFCB271C75D2D0005F440E /* UserDataStoreFactory.h */,
+				29EFCB281C75D2D0005F440E /* UserDataStoreFactory.m */,
+			);
+			name = datastore;
+			sourceTree = "<group>";
+		};
+		29EFCB221C75D22D005F440E /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				29EFCB2C1C75D471005F440E /* UserDataRepository.h */,
+				29EFCB2D1C75D471005F440E /* UserDataRepository.m */,
+			);
+			name = repository;
+			sourceTree = "<group>";
+		};
+		29EFCB2A1C75D31D005F440E /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				29EFCB2B1C75D345005F440E /* UserRepository.h */,
+			);
+			name = repository;
 			sourceTree = "<group>";
 		};
 		876D841AFC7EA35666AE8C1B /* Pods */ = {
@@ -458,13 +521,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				29B62A5D1C6AB9AA00298539 /* User.m in Sources */,
+				29EFCB2E1C75D471005F440E /* UserDataRepository.m in Sources */,
 				29E0E1CE1C658962009BC57F /* UserListViewController.m in Sources */,
 				29E0E20C1C6952B4009BC57F /* GetUserListUseCaseImpl.m in Sources */,
+				29EFCB291C75D2D0005F440E /* UserDataStoreFactory.m in Sources */,
 				29B62A541C6A7F6100298539 /* ApplicationAssembly.m in Sources */,
 				29E0E2091C69529F009BC57F /* UseCase.m in Sources */,
 				29E0E1CB1C658962009BC57F /* AppDelegate.m in Sources */,
 				29B62A591C6AB54500298539 /* BaseViewController.m in Sources */,
 				29E0E1C81C658962009BC57F /* main.m in Sources */,
+				29EFCB261C75D2BC005F440E /* CloudUserDataStore.m in Sources */,
+				29B62A661C6E9B1F00298539 /* APIConnection.m in Sources */,
+				29EFCB311C75D89F005F440E /* RestApiImpl.m in Sources */,
 				29B62A611C6ABE3800298539 /* UserListPresenter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -608,6 +676,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "iOS-CleanArchitecture/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "khashish.iOS-CleanArchitecture";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -620,6 +689,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "iOS-CleanArchitecture/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "khashish.iOS-CleanArchitecture";
 				PRODUCT_NAME = "$(TARGET_NAME)";
