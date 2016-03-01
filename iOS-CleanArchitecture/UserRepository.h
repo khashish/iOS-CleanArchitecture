@@ -11,6 +11,6 @@
 
 @protocol UserRepository <NSObject>
 
+@required
 -(RACSignal*)getUsers;
-
 @end

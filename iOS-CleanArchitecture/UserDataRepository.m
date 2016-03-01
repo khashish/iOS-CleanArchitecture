@@ -10,7 +10,7 @@
 
 @implementation UserDataRepository
 
--(RACSignal *)getUsers
+-(RACSignal*)getUsers
 {
     id<UserDataStore> userDataStore = [self.userDataStoreFactory createUserCloudDataStore];
     return [userDataStore getUsers];

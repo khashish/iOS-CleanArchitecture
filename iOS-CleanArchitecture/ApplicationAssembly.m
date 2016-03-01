@@ -49,22 +49,4 @@
     }];
 }
 
-//-(id<UserDataStore>)cloudUserDataStore {
-//    return [TyphoonDefinition withClass:[CloudUserDataStore class] configuration:^(TyphoonDefinition *definition) {
-//        [definition injectProperty:@selector(restApi) with:self.restApi];
-//    }];
-//}
-//
-//-(id<RestApi>)restApi {
-//    return [TyphoonDefinition withClass:[RestApiImpl class] configuration:^(TyphoonDefinition *definition) {
-//        [definition injectProperty:@selector(apiConnection) with:self.apiConnection];
-//    }];
-//}
-//
-//-(APIConnection*)apiConnection {
-//    return [TyphoonDefinition withClass:[APIConnection class] configuration:^(TyphoonDefinition *definition) {
-//        
-//    }];
-//}
-
 @end

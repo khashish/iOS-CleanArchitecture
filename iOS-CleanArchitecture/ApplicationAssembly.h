@@ -17,7 +17,5 @@
 @interface ApplicationAssembly : TyphoonAssembly
 
 - (UserListViewController*)viewController;
--(id<RestApi>)restApi;
--(APIConnection*)apiConnection;
 
 @end
